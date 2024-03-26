@@ -41,7 +41,22 @@ To check if the nginx is running and active, we use this command:
 
 # 3. Installing Docker in Ubuntu
 
-1. 
+1. The Docker installation package available in the official Ubuntu repository may not be the latest version. We’ll install Docker from the official Docker repository to ensure we get the latest version. To do that, we’ll add a new package source, add the GPG key from Docker to ensure the downloads are valid, and then install the package.
+**sudo apt update**
+2. Next, install a few prerequisite packages which let apt use packages over HTTPS:
+   Installing prerequisite packages|
+   :------------------------------: |
+   *sudo apt install apt-transport-https ca-certificates curl software-properties-common*|
+3. Then add the GPG key for the official Docker repository to your system:
+   Adding GPG key for Docker repository|
+   :----------------------------------:|
+   *curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg -dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg*|
+4. Even that this one is especially long, but still it need to be used in one line:
+                     |
+   :------------------:|
+   *echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null* |
+   
+
 
 
 
