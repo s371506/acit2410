@@ -20,7 +20,11 @@ Nginx is one of the most popular web servers in the world and is responsible for
 2. Installing Nginx.
    Installing Nginx |
    -----------------|
-   sudo apt install nginx |
+   *sudo apt install nginx* |
+3. Before testing Nginx, the firewall software needs to be configured to allow access to the service. Nginx registers itself as a service with ufw upon installation, making it straightforward to allow Nginx access
+   Checking services in firewall |
+   :------------------------------:|
+   sudo ufw app list | 
 
 
 
