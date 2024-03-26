@@ -24,7 +24,23 @@ Nginx is one of the most popular web servers in the world and is responsible for
 3. Before testing Nginx, the firewall software needs to be configured to allow access to the service. Nginx registers itself as a service with ufw upon installation, making it straightforward to allow Nginx access
    Checking services in firewall |
    :------------------------------:|
-   sudo ufw app list | 
+   *sudo ufw app list* |
+4. From the output list that will be we allow “Nginx HTTP”
+   Allowing Nginx HTTP |
+   :------------------:|
+   *sudo ufw allow 'Nginx HTTP'*|
+   *sudo ufw status*
+6. At the end of the installation process, Ubuntu 22.04 starts Nginx. The web server should already be up and running.
+To check if the nginx is running and active, we use this command:
+   Checking nginx status |
+   :--------------------:|
+   *systemctl status nginx*|
+    ![image](https://github.com/s371506/acit2410/assets/113550989/8cf59924-5cbf-460f-9b75-06bb0476b92c)
+
+
+# 3. Installing Docker in Ubuntu
+
+1. 
 
 
 
