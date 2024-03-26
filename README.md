@@ -35,6 +35,7 @@ To check if the nginx is running and active, we use this command:
    Checking nginx status |
    :--------------------:|
    *systemctl status nginx*|
+
     ![image](https://github.com/s371506/acit2410/assets/113550989/8cf59924-5cbf-460f-9b75-06bb0476b92c)
 
 
