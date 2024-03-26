@@ -84,7 +84,11 @@ Before I show you how to create an image and run a container in Docker, we first
     <h1> Hello World </h1> 
     </body>           
     </html>           
-    ```               
+    ```
+4. Save it, and then create a Dockerfile (A Dockerfile contains the commands or instructions used during the build to create the Docker image).
+   Creating a Dockerfile |
+   :-------------------:|
+   *nano Dockerfile* |
         
 
 
