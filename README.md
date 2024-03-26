@@ -135,8 +135,9 @@ Let’s say we want to update our HTML file, so we go to the directory that we c
     <h1> Hello Class </h1>
     <h2> This is a test for docker lab </h2> 
     </body>           
-    </html>           
-    ```
+    </html> ```
+13. We need to create again a new image by giving almost the same command as before but only now we use v2 in the end:
+   
 
 
 
