@@ -89,6 +89,52 @@ Before I show you how to create an image and run a container in Docker, we first
    Creating a Dockerfile |
    :-------------------:|
    *nano Dockerfile* |
+5. Inside the Dockerfile put this:
+   Dockerfile content |
+   :----------------: |
+   *FROM nginx:alpine*|
+   *COPY . /usr/share/nginx/html*|
+6. Next, create a docker image by giving this command:
+   Creating a Docker image |
+   :----------------------:|
+   *docker build -t webpage:v1 .* |
+7. Run docker image command to see if the image was created:
+   Checking if docker image was created|
+   :---------------------------------:|
+   *docker images* |
+After you run the *docker images* command, the output should be like this:
+![image](https://github.com/s371506/acit2410/assets/113550989/74e8e457-76b5-485a-b894-61ec463bee95)
+8. Create and deploy the Container:
+   Creating docker container|
+   :-----------------------:|
+   *docker run -d -p 8080:80 webpage:v1* |
+9. Confirm that the container is running by giving this command:
+    Checking if the container is running |
+   :-------------------------------------:|
+   *docker ps* |
+![image](https://github.com/s371506/acit2410/assets/113550989/ea920eb1-c7be-4e85-90c4-3ffe5e912f06)
+10. Verify that you can reach the landing page by giving this command:
+    Verifying that the webpage is reachable |
+    :--------------------------------------:|
+    *curl http://localhost:8080* |
+11. Then lastly, go to a web browser on your Ubuntu machine and give the http://localhost:8080 in the URL; the output should be like this.
+     ![image](https://github.com/s371506/acit2410/assets/113550989/08be62da-2a83-4fc1-8858-96b23160ffe3)
+
+Let’s say we want to update our HTML file, so we go to the directory that we create earlier, and we give again nano index.html and we change the html file: 
+12. We update our **HTML File content**
+   ```html           
+    <html>            
+    <head>            
+    </head>           
+    <body>            
+    <h1> Hello Class </h1>
+    <h2> This is a test for docker lab </h2> 
+    </body>           
+    </html>           
+    ```
+
+
+
         
 
 
