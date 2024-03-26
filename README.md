@@ -127,16 +127,20 @@ After you run the *docker images* command, the output should be like this:
 Let’s say we want to update our HTML file, so we go to the directory that we create earlier, and we give again nano index.html and we change the html file: 
 
 12. We update our **HTML File content**
-   ```html           
-    <html>            
-    <head>            
-    </head>           
-    <body>            
-    <h1> Hello Class </h1>
-    <h2> This is a test for docker lab </h2> 
-    </body>           
-    </html> ```
+      ```html           
+       <html>            
+       <head>            
+       </head>           
+       <body>            
+       <h1> Hello Class </h1>
+       <h2> This is a test for docker lab </h2> 
+       </body>           
+       </html>
+      ```
 13. We need to create again a new image by giving almost the same command as before but only now we use v2 in the end:
+    Creating docker image |
+    :--------------------:|
+    docker build -t webpage:v2 .|
    
 
 
