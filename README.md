@@ -50,11 +50,28 @@ To check if the nginx is running and active, we use this command:
 3. Then add the GPG key for the official Docker repository to your system:
    Adding GPG key for Docker repository|
    :----------------------------------:|
-   *curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg -dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg*|
+   *curl -fsSL https://download.docker.com/linux/ubuntu/gpg  \| sudo gpg -dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg*|
 4. Even that this one is especially long, but still it need to be used in one line:
                      |
    :------------------:|
    *echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null* |
+5. Update your existing list of packages again for the addition to be recognized: **sudo apt update**.
+6. Lastly, install Docker by giving this command:
+   Installing Docker |
+   :----------------:|
+   *sudo apt-get install -y docker-ce docker-ce-cli containerd.io*
+7. And to verify that the docker is installed properly you give docker -v command, and if it’s installed properly it will show you the version of the docker.
+   Checking if Docker is installed |
+   :------------------------------:|
+   *docker -v*|
+
+# 4. Creating an image and running containers in Docker.
+Before I show you how to create an image and run a container in Docker, we first need to create a simple HTML file.
+1. Create a new directory.
+   Creating a new directory |
+   :------------------------:|
+   *mkdir* <name of the directory> |
+
    
 
 
