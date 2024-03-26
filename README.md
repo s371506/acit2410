@@ -74,10 +74,8 @@ Before I show you how to create an image and run a container in Docker, we first
 2. Create an HTML file in that directory.
    Creating HTML file |
    :-----------------:|
-   ```*nano index.html*```|
+   *nano index.html*|
 3. Inside the index.html put this:
-   HTML file content |
-   :-------------------:|
     ```html           
     <html>            
     <head>            
