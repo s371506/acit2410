@@ -76,15 +76,18 @@ Before I show you how to create an image and run a container in Docker, we first
    :-----------------:|
    *nano index.html*|
 3. Inside the index.html put this:
-   HTML file content|
-   :---------------:|
-   <html>            |
-   <head>            |
-   </head>            |
-   <body>            |
-   <h1> Hello World </h1> |
-   </body>            |
-   </html>|            |
+  | HTML file content |
+|-------------------|
+| ```html           |
+| <html>            |
+| <head>            |
+| </head>           |
+| <body>            |
+| <h1> Hello World </h1> |
+| </body>           |
+| </html>           |
+| ```               |
+        
 
 
    
