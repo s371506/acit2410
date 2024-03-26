@@ -141,7 +141,45 @@ Let’s say we want to update our HTML file, so we go to the directory that we c
     Creating docker image |
     :--------------------:|
     docker build -t webpage:v2 .|
-   
+
+14. After that, we verify that the image was created:
+    Verifying the image was created |
+    :------------------------------:|
+    *docker images* |
+![image](https://github.com/s371506/acit2410/assets/113550989/35b7c0e1-a5e8-41e9-bef1-2a244a96c64d)
+
+15. To run the new image first we need to delete the previous container. To be able to delete the container first we need to stop the container, and we do it by giving the container ID:
+    Copying the container ID |
+    :-----------------------:|
+    *docker ps* (copy the container ID) |
+![image](https://github.com/s371506/acit2410/assets/113550989/6469c8b9-2bf9-41f0-abef-776cf35c9b43)
+
+16. We stop the container by giving the command:
+    Stopping the container by giving the container ID |
+    :--------------------------------------------: |
+    *docker stop f1972e3b2dfa* |
+It does not mean that all of you will get the same ID, but in my case **f1972e3b2dfa** was the ID of the container.
+
+17. After stopping we remove the container by giving this command:
+    Removing docker container |
+    :----------------------:  |
+    *docker rm f1972e3b2dfa*  |
+
+18. Create and deploy new container:
+    Creating docker container |
+    :------------------------:|
+    *docker run -d -p 8080:80 webpage:v2* |
+
+19. Verify that you can reach the landing page by giving this command:
+    Verifying that the webpage is reachable |
+    :--------------------------------------:|
+    *curl http://localhost:8080* |
+
+20. Then lastly, go to a web browser on your Ubuntu machine and give the http://localhost:8080 in the URL; the output should be like this.
+    ![image](https://github.com/s371506/acit2410/assets/113550989/daeb9974-7816-49f7-90e3-2b01d6235553)
+
+
+
 
 
 
