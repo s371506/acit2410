@@ -18,9 +18,9 @@
 Nginx is one of the most popular web servers in the world and is responsible for hosting some of the largest and highest-traffic sites on the internet. It is a lightweight choice that can be used as either a web server or reverse proxy.
 1. Before installing Nginx, we give first a **sudo apt update**.
 2. Installing Nginx.
- |  Installing Nginx       |
- | ----------------------- |  
- | sudo apt install nginx  | 
+   Installing Nginx |
+   -----------------|
+   sudo apt install nginx |
 
 
 
