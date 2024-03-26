@@ -51,8 +51,8 @@ To check if the nginx is running and active, we use this command:
    Adding GPG key for Docker repository|
    :----------------------------------:|
    *curl -fsSL https://download.docker.com/linux/ubuntu/gpg  \| sudo gpg -dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg*|
-4. Even that this one is especially long, but still it need to be used in one line:
-                     |
+4. Even though this one is especially long, still it needs to be used in one line:
+   Past this in one line |
    :------------------:|
    *echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null* |
 5. Update your existing list of packages again for the addition to be recognized: **sudo apt update**.
@@ -60,7 +60,7 @@ To check if the nginx is running and active, we use this command:
    Installing Docker |
    :----------------:|
    *sudo apt-get install -y docker-ce docker-ce-cli containerd.io*
-7. And to verify that the docker is installed properly you give docker -v command, and if it’s installed properly it will show you the version of the docker.
+7. To verify that the Docker is installed properly, you can give the docker—v command. If it’s installed properly, it will show you the version of the Docker.
    Checking if Docker is installed |
    :------------------------------:|
    *docker -v*|
@@ -71,6 +71,21 @@ Before I show you how to create an image and run a container in Docker, we first
    Creating a new directory |
    :------------------------:|
    *mkdir* <name of the directory> |
+2. Create an HTML file in that directory.
+   Creating HTML file |
+   :-----------------:|
+   *nano index.html*|
+3. Inside the index.html put this:
+   HTML file content|
+   :---------------:|
+   <html>
+   <head>
+   </head>
+   <body>
+   <h1> Hello World </h1>
+   </body>
+   </html>|
+
 
    
 
